@@ -3,8 +3,8 @@ import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [ElectricHeaterModule::class, ThermosiphonModule::class])
+@Component(modules = [ThermosiphonModule::class])
 interface CoffeeMakerComponent {
     fun getCoffeMaker(): CoffeeMaker
-    fun inject2Activity(mainActivity: MainActivity)
+    fun inject(mainActivity: MainActivity)
 }

@@ -1,8 +1,7 @@
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@Singleton
-class ElectricHeater @Inject constructor() : Heater {
+class ElectricHeater constructor() : Heater {
     var is_hot = false
 
     override fun on() {

@@ -1,9 +1,11 @@
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import javax.inject.Singleton
 
-@Module
-abstract class ElectricHeaterModule {
-    @Binds
-    abstract fun bindHeater(electricHeater: ElectricHeater): Heater
-}
+//@Module(includes = [ThermosiphonModule::class])
+//class ElectricHeaterModule {
+//    @Provides
+////    @Singleton
+//    fun provideHeater(): Heater = ElectricHeater()
+//}
